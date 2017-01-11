@@ -1,0 +1,32 @@
+﻿<Page
+    x:Class="PremierEssai.View.Inscription"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:PremierEssai.View"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="white">
+        <StackPanel VerticalAlignment="Center">
+            <TextBlock Text="Inscription" HorizontalAlignment="Center" Margin="30" FontSize="40"/>
+            <TextBox Name="txtnom" PlaceholderText="Nom Complet" Margin="10" />
+            <TextBox Name="txtcin" PlaceholderText=" CinIN" Margin="10" />
+            <DatePicker Name="txtdate" Margin="10" />
+            <TextBox Name="txtemail" PlaceholderText="e-mail" Margin="10" />
+            <PasswordBox Name="txtmdp" PlaceholderText="Mot de passe" Margin="10"/>
+            <PasswordBox Name="txtcmdp" PlaceholderText="Confirmer mot de passe" Margin="10"/>
+            <ComboBox Name="txtprof" PlaceholderText="Profession" Margin="10" />
+            <ComboBox Name="txtetab" PlaceholderText="Etablissement" Margin="10" />
+        </StackPanel>
+        
+    </Grid>
+    <Page.BottomAppBar>
+        <CommandBar>
+            <AppBarButton Name="InscritButton" Icon="Save" Label="Inscrit"/>
+            <AppBarButton Name="RetourButton" Icon="Back" Label="Retour"  />
+        </CommandBar>
+    </Page.BottomAppBar>
+
+
+</Page>
